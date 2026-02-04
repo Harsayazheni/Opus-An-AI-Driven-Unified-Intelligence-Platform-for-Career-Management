@@ -1,0 +1,362 @@
+/* ===============================
+   GLOBAL STYLES
+=============================== */
+:root {
+    --primary: #2ecc71;
+    --secondary: #27ae60;
+    --accent: #3498db;
+    --bg-light: #f8f9fb;
+    --card-bg: #ffffff;
+    --text-dark: #2c3e50;
+}
+/* ===============================
+   CAREER THEMES
+=============================== */
+
+body[data-theme="Software Developer"] {
+    --primary: #3498db;
+    --secondary: #2980b9;
+    --accent: #1abc9c;
+}
+
+body[data-theme="Data Scientist"] {
+    --primary: #9b59b6;
+    --secondary: #8e44ad;
+    --accent: #e056fd;
+}
+
+body[data-theme="AI ML Engineer"] {
+    --primary: #6c5ce7;
+    --secondary: #341f97;
+    --accent: #00cec9;
+}
+
+body[data-theme="UI/UX Designer"] {
+    --primary: #e84393;
+    --secondary: #d63031;
+    --accent: #fdcb6e;
+}
+
+body[data-theme="Cloud Engineer"] {
+    --primary: #00b894;
+    --secondary: #019875;
+    --accent: #0984e3;
+}
+
+body[data-theme="DevOps Engineer"] {
+    --primary: #f39c12;
+    --secondary: #e67e22;
+    --accent: #d35400;
+}
+
+body[data-theme="Cyber Security Analyst"] {
+    --primary: #2d3436;
+    --secondary: #636e72;
+    --accent: #e17055;
+}
+
+body[data-theme="Digital Marketing Specialist"] {
+    --primary: #ff7675;
+    --secondary: #d63031;
+    --accent: #ffeaa7;
+}
+
+body[data-theme="Product Manager"] {
+    --primary: #0984e3;
+    --secondary: #0652dd;
+    --accent: #74b9ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f8f9fb;
+    color: #2c3e50;
+    margin: 0;
+    padding: 40px;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* ===============================
+   FORM & INPUTS
+=============================== */
+
+form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+label {
+    font-weight: 600;
+}
+
+select {
+    padding: 8px;
+    margin-top: 8px;
+    width: 250px;
+}
+
+button {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #27ae60;
+}
+
+/* ===============================
+   SKILL SLIDERS
+=============================== */
+
+.skill-box {
+    margin-bottom: 20px;
+}
+
+input[type="range"] {
+    width: 260px;
+    margin-top: 5px;
+}
+
+.value {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* ===============================
+   SCORE BOX
+=============================== */
+
+.score-box {
+    background: #f4f6f7;
+    padding: 18px;
+    border-left: 6px solid #2ecc71;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+/* ===============================
+   SKILL BARS
+=============================== */
+
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.bar {
+    width: 100%;
+    background: #e0e0e0;
+    height: 16px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: #3498db;
+}
+
+/* ===============================
+   RADAR CHART
+=============================== */
+
+.chart-container {
+    width: 320px;
+    height: 320px;
+    margin: 20px auto 40px auto;
+}
+
+/* ===============================
+   ROADMAP SECTIONS
+=============================== */
+
+.roadmap-section {
+    margin-top: 35px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.roadmap-section h3 {
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+}
+
+.roadmap-section h4 {
+    margin-top: 20px;
+    color: #16a085;
+}
+
+.roadmap-section p {
+    margin-left: 10px;
+}
+
+/* ===============================
+   FINAL VERDICT
+=============================== */
+
+.verdict-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 6px solid #34495e;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family: inherit;
+}
+
+/* ===============================
+   WEEKLY & MONTHLY PLANS
+=============================== */
+
+.weekly-plan p,
+.monthly-summary p {
+    margin-bottom: 8px;
+}
+
+.month-progress {
+    background: #e0e0e0;
+    height: 10px;
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.month-progress-fill {
+    background: #2ecc71;
+    height: 10px;
+}
+
+/* ===============================
+   TABLES
+=============================== */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* ===============================
+   FOOTER BUTTONS
+=============================== */
+
+form[action="/download"],
+form[action="/"] {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .chart-container {
+        width: 260px;
+        height: 260px;
+    }
+
+    input[type="range"] {
+        width: 200px;
+    }
+}
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.08);
+}
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+button {
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
